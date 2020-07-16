@@ -38,10 +38,12 @@ body {
     font-family: bold;
     margin: 2rem 0;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 #typewriter2 {
     font-size: 30px;
     font-family: light;
     text-align: center;
+    letter-spacing: 2px;
 }
