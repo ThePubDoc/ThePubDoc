@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="particles-js">
+        <div class="conatiner">
+            <div id="typewriter1"></div>
+            <div id="typewriter2"></div>
+        </div>
+        
+    </div>
+    
+    <script src = "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+    <script>
+        const instance1 = new Typewriter('#typewriter1', {
+            loop: true
+        });
+        instance1.typeString("Hey there! I'm Aayush")
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('I am a Full Stack Developer')
+                .pauseFor(3000)
+                .deleteAll()
+                .start();
+
+        const instance2 = new Typewriter('#typewriter2', {
+            loop: true
+        });
+        instance2.typeString("Nice to meet you.")
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString('JavaScript, NodeJS, ReactJS, HTML/CSS')
+                .pauseFor(1000)
+                .deleteAll()
+                .start();
+    </script>
+</body>
+</html>
