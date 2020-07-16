@@ -14,6 +14,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<img src = "https://media.giphy.com/media/ggQKw1bdZhTPxCwESZ/giphy.gif" width = "100%">
+<img src = "https://github.com/ThePubDoc/ThePubDoc/blob/master/1.gif" width = "100%">
 
 <!-- <img src = "1.gif" width = "100%"> -->
