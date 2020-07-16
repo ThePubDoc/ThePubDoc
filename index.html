@@ -26,12 +26,13 @@
     <script>
         const instance1 = new Typewriter('#typewriter1', {
             loop: true,
-            delay: 40
+            delay: 40,
+            deleteSpeed: 40
         });
         instance1.typeString("Hey there! I'm Aayush")
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString('I am a Full Stack Developer')
+                .typeString("I'm a Full Stack Developer")
                 .pauseFor(3000)
                 .deleteAll()
                 .start();
@@ -43,7 +44,7 @@
         instance2.typeString("Nice to meet you.")
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('JavaScript, NodeJS, ReactJS, HTML/CSS')
+                .typeString("JavaScript, NodeJS, ReactJS, HTML/CSS")
                 .pauseFor(2000)
                 .deleteAll()
                 .start();
