@@ -14,4 +14,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<img src = "https://media.giphy.com/media/mF4JHfVhCJYtJsHJum/giphy.gif">
+<img src = "https://media.giphy.com/media/mF4JHfVhCJYtJsHJum/giphy.gif" width = "100%">
