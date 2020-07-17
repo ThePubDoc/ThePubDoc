@@ -13,4 +13,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<img src = "https://github.com/ThePubDoc/ThePubDoc/blob/master/cover.gif" width = "100%">
+<img src = "https://github.com/ThePubDoc/ThePubDoc/blob/readme/cover.gif" width = "100%">
