@@ -1,4 +1,3 @@
-
 <!--
 **ThePubDoc/ThePubDoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -15,5 +14,3 @@ Here are some ideas to get you started:
 -->
 
 <img src = "https://github.com/ThePubDoc/ThePubDoc/blob/master/cover.gif" width = "100%">
-
-<!-- <img src = "1.gif" width = "100%"> -->
