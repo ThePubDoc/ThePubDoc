@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "<!-- **ThePubDoc/ThePubDoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
   "main": "index.js",
-  "homepage": "https://thepubdoc.github.io/ThePubDoc",
+  "homepage": "http://thepubdoc.github.io/ThePubDoc",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
