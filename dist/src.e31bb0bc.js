@@ -31639,7 +31639,7 @@ var _RowdiesRegular = _interopRequireDefault(require("../Fonts/Rowdies-Regular.t
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    html, body, div, span, applet, object, iframe,\n    h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n    a, abbr, acronym, address, big, cite, code,\n    del, dfn, em, img, ins, kbd, q, s, samp,\n    small, strike, strong, sub, sup, tt, var,\n    b, u, i, center,\n    dl, dt, dd, ol, ul, li,\n    fieldset, form, label, legend,\n    table, caption, tbody, tfoot, thead, tr, th, td,\n    article, aside, canvas, details, embed, \n    figure, figcaption, footer, header, hgroup, \n    menu, nav, output, ruby, section, summary,\n    time, mark, audio, video {\n        margin: 0;\n        padding: 0;\n        border: 0;\n        font-size: 100%;\n        font: inherit;\n        vertical-align: baseline;\n    }\n    article, aside, details, figcaption, figure, \n    footer, header, hgroup, menu, nav, section {\n        display: block;\n    }\n    body {\n        line-height: 1;\n    }\n    ol, ul {\n        list-style: none;\n    }\n    blockquote, q {\n        quotes: none;\n    }\n    blockquote:before, blockquote:after,\n    q:before, q:after {\n        content: '';\n        content: none;\n    }\n    table {\n        border-collapse: collapse;\n        border-spacing: 0;\n    }\n\n    body {\n        background: ", ";\n        color: ", ";\n        border: ", ";\n    }\n\n     \n    @font-face {\n        font-family: light;\n        src: url(", ");\n    }\n    \n    @font-face {\n        font-family: bold;\n        src: url(", ");\n    }\n\n    @font-face {\n        font-family: regular;\n        src: url(", ");\n    }\n\n    h1 {\n        font-family: bold;\n        font-size: 2rem;\n        letter-spacing: 1px;\n    }\n\n    h2 {\n        font-family: bold;\n        font-size: 1.5rem;\n        letter-spacing: 1px;\n    }\n    \n    h3 {\n        font-family: bold;\n        font-size: 1rem;\n        letter-spacing: 1px;\n    }\n\n    p {\n        font-family: light;\n        letter-spacing: 1px;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    html, body, div, span, applet, object, iframe,\n    h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n    a, abbr, acronym, address, big, cite, code,\n    del, dfn, em, img, ins, kbd, q, s, samp,\n    small, strike, strong, sub, sup, tt, var,\n    b, u, i, center,\n    dl, dt, dd, ol, ul, li,\n    fieldset, form, label, legend,\n    table, caption, tbody, tfoot, thead, tr, th, td,\n    article, aside, canvas, details, embed, \n    figure, figcaption, footer, header, hgroup, \n    menu, nav, output, ruby, section, summary,\n    time, mark, audio, video {\n        margin: 0;\n        padding: 0;\n        border: 0;\n        font-size: 100%;\n        font: inherit;\n        vertical-align: baseline;\n    }\n    article, aside, details, figcaption, figure, \n    footer, header, hgroup, menu, nav, section {\n        display: block;\n    }\n    body {\n        line-height: 1;\n    }\n    ol, ul {\n        list-style: none;\n    }\n    blockquote, q {\n        quotes: none;\n    }\n    blockquote:before, blockquote:after,\n    q:before, q:after {\n        content: '';\n        content: none;\n    }\n    table {\n        border-collapse: collapse;\n        border-spacing: 0;\n    }\n\n    body {\n        background: ", ";\n        color: ", ";\n        border: ", ";\n    }\n\n     \n    @font-face {\n        font-family: light;\n        src: url(", ");\n    }\n    \n    @font-face {\n        font-family: bold;\n        src: url(", ");\n    }\n\n    @font-face {\n        font-family: regular;\n        src: url(", ");\n    }\n\n    h1 {\n        font-family: bold;\n        font-size: 2rem;\n        letter-spacing: 1px;\n    }\n\n    h2 {\n        font-family: bold;\n        font-size: 1.5rem;\n        letter-spacing: 1px;\n    }\n    \n    h3 {\n        font-family: bold;\n        font-size: 1rem;\n        letter-spacing: 1px;\n    }\n\n    p {\n        font-family: light;\n        letter-spacing: 1px;\n    }\n\n    a {\n        font-family: light;\n        letter-spacing: 1px;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -35901,13 +35901,25 @@ if ("development" === "production") {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.StyledLink = exports.StyledLinks = exports.StyledLogo = exports.StyledNavbar = void 0;
+exports.StyledSwitch = exports.StyledLink = exports.StyledLinks = exports.StyledLogo = exports.StyledNavbar = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _reactSwitch = _interopRequireDefault(require("react-switch"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  margin: 0 1rem;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n  color: inherit;\n  margin: 0 1rem;\n"]);
@@ -35940,7 +35952,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  padding: 2rem 5rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -35964,7 +35976,9 @@ var StyledLinks = _styledComponents.default.div(_templateObject3());
 exports.StyledLinks = StyledLinks;
 var StyledLink = (0, _styledComponents.default)(_reactRouterDom.Link)(_templateObject4());
 exports.StyledLink = StyledLink;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Components/Navbar/Navbar.js":[function(require,module,exports) {
+var StyledSwitch = (0, _styledComponents.default)(_reactSwitch.default)(_templateObject5());
+exports.StyledSwitch = StyledSwitch;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-switch":"../node_modules/react-switch/index.js"}],"Components/Navbar/Navbar.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36024,11 +36038,12 @@ var Navbar = function Navbar(_ref) {
     to: "/home"
   }, /*#__PURE__*/_react.default.createElement("h3", null, "Projects")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, {
     to: "/home"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Contact")), /*#__PURE__*/_react.default.createElement(_reactSwitch.default, {
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Contact")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledSwitch, {
     onChange: change,
     checked: checked,
     uncheckedIcon: false,
-    checkedIcon: true
+    checkedIcon: true,
+    onColor: "#2e88fd"
   })));
 };
 
@@ -36047,7 +36062,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  width: 70%;\n  margin: auto;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -36076,7 +36091,7 @@ var _Home = require("./Home.style");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
-  return /*#__PURE__*/_react.default.createElement(_Home.StyledContainer, null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello My name is Aayush"));
+  return /*#__PURE__*/_react.default.createElement(_Home.StyledContainer, null, /*#__PURE__*/_react.default.createElement("p", null, "Hi, my name is"));
 };
 
 var _default = Home;
@@ -52785,13 +52800,23 @@ AiTwotoneWarning.displayName = "AiTwotoneWarning";
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.StyledMailLink = exports.StyledMail = exports.StyledInstagram = exports.StyledLine = exports.StyledLinkedin = exports.StyledGithub = exports.StyledSocialLinks = void 0;
+exports.StyledLink = exports.StyledMailLinkContainer = exports.StyledMailLink = exports.StyledInstagram = exports.StyledLine = exports.StyledLinkedin = exports.StyledGithub = exports.StyledSocialLinksContainer = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _ai = require("react-icons/ai");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n  color: inherit;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject7() {
   var data = _taggedTemplateLiteral(["\n  width: 10%;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  align-items: center;\n  position: fixed;\n  bottom: 0;\n  right: 0;\n"]);
@@ -52804,7 +52829,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n  writing-mode: vertical-lr;\n"]);
+  var data = _taggedTemplateLiteral(["\n  color: inherit;\n  writing-mode: vertical-lr;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -52824,7 +52849,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  content: '';\n  height: 5rem;\n  width: 0.1rem;\n  border: 1px solid;\n  margin-top: 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  content: '';\n  height: 6rem;\n  width: 0.1rem;\n  border: 1px solid;\n  margin-top: 1rem;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -52865,9 +52890,9 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var StyledSocialLinks = _styledComponents.default.div(_templateObject());
+var StyledSocialLinksContainer = _styledComponents.default.div(_templateObject());
 
-exports.StyledSocialLinks = StyledSocialLinks;
+exports.StyledSocialLinksContainer = StyledSocialLinksContainer;
 var StyledGithub = (0, _styledComponents.default)(_ai.AiFillGithub)(_templateObject2());
 exports.StyledGithub = StyledGithub;
 var StyledLinkedin = (0, _styledComponents.default)(_ai.AiFillLinkedin)(_templateObject3());
@@ -52879,13 +52904,27 @@ exports.StyledLine = StyledLine;
 var StyledInstagram = (0, _styledComponents.default)(_ai.AiOutlineInstagram)(_templateObject5());
 exports.StyledInstagram = StyledInstagram;
 
-var StyledMail = _styledComponents.default.p(_templateObject6());
-
-exports.StyledMail = StyledMail;
-
-var StyledMailLink = _styledComponents.default.div(_templateObject7());
+var StyledMailLink = _styledComponents.default.a.attrs(function (props) {
+  return {
+    href: props.src,
+    target: '_blank'
+  };
+})(_templateObject6());
 
 exports.StyledMailLink = StyledMailLink;
+
+var StyledMailLinkContainer = _styledComponents.default.div(_templateObject7());
+
+exports.StyledMailLinkContainer = StyledMailLinkContainer;
+
+var StyledLink = _styledComponents.default.a.attrs(function (props) {
+  return {
+    href: props.src,
+    target: '_blank'
+  };
+})(_templateObject8());
+
+exports.StyledLink = StyledLink;
 },{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-icons/ai":"../node_modules/react-icons/ai/index.esm.js"}],"Components/SideBar/SideSocialBar.js":[function(require,module,exports) {
 "use strict";
 
@@ -52901,7 +52940,13 @@ var _SideBar = require("./SideBar.style");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SideBAr = function SideBAr() {
-  return /*#__PURE__*/_react.default.createElement(_SideBar.StyledSocialLinks, null, /*#__PURE__*/_react.default.createElement(_SideBar.StyledGithub, null), /*#__PURE__*/_react.default.createElement(_SideBar.StyledLinkedin, null), /*#__PURE__*/_react.default.createElement(_SideBar.StyledInstagram, null), /*#__PURE__*/_react.default.createElement(_SideBar.StyledLine, null));
+  return /*#__PURE__*/_react.default.createElement(_SideBar.StyledSocialLinksContainer, null, /*#__PURE__*/_react.default.createElement(_SideBar.StyledLink, {
+    src: "https://www.github.com/thepubdoc"
+  }, /*#__PURE__*/_react.default.createElement(_SideBar.StyledGithub, null)), /*#__PURE__*/_react.default.createElement(_SideBar.StyledLink, {
+    src: "https://www.linkedin.com/in/aayushagrawal"
+  }, /*#__PURE__*/_react.default.createElement(_SideBar.StyledLinkedin, null)), /*#__PURE__*/_react.default.createElement(_SideBar.StyledLink, {
+    src: "https://www.instagram.com/cyber.smoke_/"
+  }, /*#__PURE__*/_react.default.createElement(_SideBar.StyledInstagram, null)), /*#__PURE__*/_react.default.createElement(_SideBar.StyledLine, null));
 };
 
 var _default = SideBAr;
@@ -52921,7 +52966,9 @@ var _SideBar = require("./SideBar.style");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SideMailBar = function SideMailBar() {
-  return /*#__PURE__*/_react.default.createElement(_SideBar.StyledMailLink, null, /*#__PURE__*/_react.default.createElement(_SideBar.StyledMail, null, "aayush9152@gmail.com"), /*#__PURE__*/_react.default.createElement(_SideBar.StyledLine, null));
+  return /*#__PURE__*/_react.default.createElement(_SideBar.StyledMailLinkContainer, null, /*#__PURE__*/_react.default.createElement(_SideBar.StyledMailLink, {
+    src: "mailto:aayush9152@gmail.com"
+  }, "aayush9152@gmail.com"), /*#__PURE__*/_react.default.createElement(_SideBar.StyledLine, null));
 };
 
 var _default = SideMailBar;
@@ -53048,7 +53095,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33925" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45625" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

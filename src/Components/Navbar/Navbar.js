@@ -6,6 +6,7 @@ import {
   StyledLogo,
   StyledLinks,
   StyledLink,
+  StyledSwitch,
 } from './Navbar.style';
 import { darkTheme } from '../../GlobalStyles/Theme';
 
@@ -41,11 +42,12 @@ const Navbar = ({ change, Theme }) => {
         <StyledLink to='/home'>
           <h3>Contact</h3>
         </StyledLink>
-        <Switch
+        <StyledSwitch
           onChange={change}
           checked={checked}
           uncheckedIcon={false}
           checkedIcon={true}
+          onColor='#2e88fd'
         />
       </StyledLinks>
     </StyledNavbar>

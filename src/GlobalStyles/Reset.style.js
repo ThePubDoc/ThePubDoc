@@ -92,6 +92,11 @@ const ResetStyle = createGlobalStyle`
         font-family: light;
         letter-spacing: 1px;
     }
+
+    a {
+        font-family: light;
+        letter-spacing: 1px;
+    }
 `;
 
 export default ResetStyle;
