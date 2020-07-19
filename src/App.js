@@ -12,6 +12,8 @@ import {
 import Loader from './Components/Loader/Loader';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
+import SideSocialBar from './Components/SideBar/SideSocialBar';
+import SideMailBar from './Components/SideBar/SideMailBar';
 
 const App = () => {
   const [Theme, setTheme] = useState(darkTheme);
@@ -42,6 +44,8 @@ const App = () => {
           <>
             <Navbar change={changeTheme} Theme={Theme} />
             <Home />
+            <SideSocialBar />
+            <SideMailBar />
           </>
         )}
       </BrowserRouter>

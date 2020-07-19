@@ -51,6 +51,7 @@ const ResetStyle = createGlobalStyle`
     body {
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
+        border: ${({ theme }) => theme.toggleBorder};
     }
 
      
@@ -84,6 +85,11 @@ const ResetStyle = createGlobalStyle`
     h3 {
         font-family: bold;
         font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-family: light;
         letter-spacing: 1px;
     }
 `;
