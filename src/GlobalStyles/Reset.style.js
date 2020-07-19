@@ -1,5 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
+import Light from '../Fonts/Rowdies-Light.ttf';
+import Bold from '../Fonts/Rowdies-Bold.ttf';
+import Regular from '../Fonts/Rowdies-Regular.ttf';
+
 const ResetStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,6 +52,28 @@ const ResetStyle = createGlobalStyle`
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
     }
+
+     
+    @font-face {
+        font-family: light;
+        src: url(${Light});
+    }
+    
+    @font-face {
+        font-family: bold;
+        src: url(${Bold});
+    }
+
+    @font-face {
+        font-family: regular;
+        src: url(${Regular});
+    }
+
+    h1 {
+        font-family: bold;
+        font-size: 2rem;
+    }
+    
 `;
 
 export default ResetStyle;
