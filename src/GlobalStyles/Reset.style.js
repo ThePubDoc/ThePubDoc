@@ -72,8 +72,20 @@ const ResetStyle = createGlobalStyle`
     h1 {
         font-family: bold;
         font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-family: bold;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
     }
     
+    h3 {
+        font-family: bold;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
 `;
 
 export default ResetStyle;

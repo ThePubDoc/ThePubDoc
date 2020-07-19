@@ -11,6 +11,7 @@ import {
 
 import Loader from './Components/Loader/Loader';
 import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/Home/Home';
 
 const App = () => {
   const [Theme, setTheme] = useState(darkTheme);
@@ -35,7 +36,14 @@ const App = () => {
     <ThemeProvider theme={Theme}>
       <ResetStyle />
       <BrowserRouter>
-        {showLoader ? <Loader /> : <Navbar change={changeTheme} />}
+        {showLoader ? (
+          <Loader />
+        ) : (
+          <>
+            <Navbar change={changeTheme} Theme={Theme} />
+            <Home />
+          </>
+        )}
       </BrowserRouter>
     </ThemeProvider>
   );
