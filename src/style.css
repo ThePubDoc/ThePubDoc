@@ -1,0 +1,8 @@
+.appear-appear-done {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+.appear-appear-active {
+  opacity: 0;
+}

@@ -1,10 +1,18 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 
+import { StyledContainer } from './Loader.style';
 const Loader = () => {
   return (
-    <div>
-      <h1>Hi I am Aayush</h1>
-    </div>
+    <StyledContainer>
+      <Typewriter
+        options={{
+          strings: ["console.log('Hello World');"],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    </StyledContainer>
   );
 };
 

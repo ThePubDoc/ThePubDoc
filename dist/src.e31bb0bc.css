@@ -13,5 +13,14 @@ code {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.appear-appear-done {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+.appear-appear-active {
+  opacity: 0;
+}
+
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
