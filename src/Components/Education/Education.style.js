@@ -21,4 +21,5 @@ export const StyledLogo = styled.img.attrs((props) => ({ src: props.src }))`
 export const StyledDescription = styled.p`
   margin: 2rem 0;
   line-height: 2;
+  text-align: justify;
 `;
