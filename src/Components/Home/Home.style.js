@@ -4,8 +4,7 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
-  margin: 20vh auto;
+  margin: 30% auto;
 `;
 
 export const StyledIntroLine = styled.p`

@@ -15,7 +15,7 @@ code {
 
 .appear-appear-done {
   opacity: 1;
-  transition: opacity 1000ms linear;
+  transition: opacity 1000ms ease-in;
 }
 
 .appear-appear-active {

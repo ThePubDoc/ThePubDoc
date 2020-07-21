@@ -17,11 +17,14 @@ import SideMailBar from './Components/SideBar/SideMailBar';
 import { CSSTransition } from 'react-transition-group';
 
 import './style.css';
+import Education from './Components/Education/Education';
+
+import { StyledHeroContainer } from './App.style';
 
 const App = () => {
   const [Theme, setTheme] = useState(darkTheme);
-
   const [showLoader, setShowLoader] = useState(true);
+  const [currentSection, setCurrentSection] = useState(<Education />);
 
   const changeTheme = () => {
     if (Theme === darkTheme) {
@@ -34,8 +37,16 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowLoader(false);
-    }, 8500);
+    }, 1);
   }, []);
+
+  const onClickHome = () => {
+    setCurrentSection(<Home />);
+  };
+
+  const onClickEducation = () => {
+    setCurrentSection(<Education />);
+  };
 
   return (
     <ThemeProvider theme={Theme}>
@@ -51,8 +62,13 @@ const App = () => {
             classNames='appear'
           >
             <div>
-              <Navbar change={changeTheme} Theme={Theme} />
-              <Home />
+              <Navbar
+                change={changeTheme}
+                Theme={Theme}
+                onClickEducation={onClickEducation}
+                onClickHome={onClickHome}
+              />
+              <StyledHeroContainer>{currentSection}</StyledHeroContainer>
               <SideSocialBar />
               <SideMailBar />
             </div>

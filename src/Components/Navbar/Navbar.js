@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Switch from 'react-switch';
 
 import {
   StyledNavbar,
@@ -9,8 +8,9 @@ import {
   StyledSwitch,
 } from './Navbar.style';
 import { darkTheme } from '../../GlobalStyles/Theme';
+import Education from '../Education/Education';
 
-const Navbar = ({ change, Theme }) => {
+const Navbar = ({ change, Theme, onClickEducation, onClickHome }) => {
   const [checked, setChecked] = useState(true);
 
   useEffect(() => {
@@ -27,10 +27,11 @@ const Navbar = ({ change, Theme }) => {
         <h1>A</h1>
       </StyledLogo>
       <StyledLinks>
-        <StyledLink to='/home'>
+        <StyledLink onClick={onClickHome}>
           <h3>Home</h3>
         </StyledLink>
-        <StyledLink to='/home'>
+
+        <StyledLink onClick={onClickEducation}>
           <h3>Education</h3>
         </StyledLink>
         <StyledLink to='/home'>
