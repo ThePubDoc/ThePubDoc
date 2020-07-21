@@ -17,4 +17,4 @@ Here are some ideas to get you started:
 
 ![Aayush](https://github.com/ThePubDoc/ThePubDoc/blob/readme/cover.gif)
 
-[ThePubDoc]('https://thepubdoc.github.io/ThePubDoc')
+[ThePubDoc](https://thepubdoc.github.io/ThePubDoc)
