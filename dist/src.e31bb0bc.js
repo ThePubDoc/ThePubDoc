@@ -36031,7 +36031,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  margin: 2rem 0;\n  line-height: 2;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -55216,7 +55216,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 50%;\n  margin: auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 50%;\n  margin: 35vh auto;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

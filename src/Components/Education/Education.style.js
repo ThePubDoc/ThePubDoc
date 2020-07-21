@@ -18,4 +18,7 @@ export const StyledLogo = styled.img.attrs((props) => ({ src: props.src }))`
   grid-row-end: 4;
 `;
 
-export const StyledDescription = styled.p``;
+export const StyledDescription = styled.p`
+  margin: 2rem 0;
+  line-height: 2;
+`;
