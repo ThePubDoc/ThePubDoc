@@ -38212,7 +38212,9 @@ var Navbar = function Navbar(_ref) {
   var change = _ref.change,
       Theme = _ref.Theme,
       onClickEducation = _ref.onClickEducation,
-      onClickHome = _ref.onClickHome;
+      onClickHome = _ref.onClickHome,
+      onClickProject = _ref.onClickProject,
+      onClickContact = _ref.onClickContact;
 
   var _useState = (0, _react.useState)(true),
       _useState2 = _slicedToArray(_useState, 2),
@@ -38230,7 +38232,11 @@ var Navbar = function Navbar(_ref) {
     onClick: onClickHome
   }, /*#__PURE__*/_react.default.createElement("h3", null, "Home")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, {
     onClick: onClickEducation
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Education")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, null, /*#__PURE__*/_react.default.createElement("h3", null, "Experience")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, null, /*#__PURE__*/_react.default.createElement("h3", null, "Projects")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, null, /*#__PURE__*/_react.default.createElement("h3", null, "Contact")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledSwitch, {
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Education")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, null, /*#__PURE__*/_react.default.createElement("h3", null, "Experience")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, {
+    onClick: onClickProject
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Projects")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, {
+    onClick: onClickContact
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Contact")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledSwitch, {
     onChange: change,
     checked: checked,
     uncheckedIcon: false,
@@ -62835,6 +62841,8 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _Projects = require("./Projects.style");
 
+var _reactTransitionGroup = require("react-transition-group");
+
 require("../../style.css");
 
 var _data = require("./data");
@@ -62899,7 +62907,12 @@ var Projects = function Projects() {
     }
   };
 
-  return /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledGridContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledProjectName, null, _data.projects[currentProject].name), /*#__PURE__*/_react.default.createElement(_Projects.StyledDescription, null, _data.projects[currentProject].description), /*#__PURE__*/_react.default.createElement(_Projects.StyledScreenshot, {
+  return /*#__PURE__*/_react.default.createElement(_reactTransitionGroup.CSSTransition, {
+    in: true,
+    appear: true,
+    timeout: 1000,
+    classNames: "appear"
+  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledGridContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledProjectName, null, _data.projects[currentProject].name), /*#__PURE__*/_react.default.createElement(_Projects.StyledDescription, null, _data.projects[currentProject].description), /*#__PURE__*/_react.default.createElement(_Projects.StyledScreenshot, {
     src: _data.projects[currentProject].image
   })), /*#__PURE__*/_react.default.createElement(_Projects.StyleNavigationContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledButton, {
     disabled: !hasPrevious,
@@ -62907,12 +62920,98 @@ var Projects = function Projects() {
   }, /*#__PURE__*/_react.default.createElement(_Projects.StyledLeftArrow, null)), /*#__PURE__*/_react.default.createElement(_Projects.StyledButton, {
     disabled: !hasNext,
     onClick: next
-  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledRightArrow, null))));
+  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledRightArrow, null)))));
 };
 
 var _default = Projects;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Projects.style":"Components/Projects/Projects.style.js","../../style.css":"style.css","./data":"Components/Projects/data.js","./Project":"Components/Projects/Project.js"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Projects.style":"Components/Projects/Projects.style.js","react-transition-group":"../node_modules/react-transition-group/esm/index.js","../../style.css":"style.css","./data":"Components/Projects/data.js","./Project":"Components/Projects/Project.js"}],"Components/Contact/Contact.style.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.StyledLink = exports.StyledHeading = exports.StyledContainer = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _reactRouterDom = require("react-router-dom");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: flex-start;\n\tmargin: auto;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var StyledContainer = _styledComponents.default.div(_templateObject());
+
+exports.StyledContainer = StyledContainer;
+
+var StyledHeading = _styledComponents.default.h1(_templateObject2());
+
+exports.StyledHeading = StyledHeading;
+var StyledLink = (0, _styledComponents.default)(_reactRouterDom.Link)(_templateObject3());
+exports.StyledLink = StyledLink;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Components/Contact/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Contact = require("./Contact.style");
+
+var _reactTransitionGroup = require("react-transition-group");
+
+require("../../style.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Contact = function Contact() {
+  return /*#__PURE__*/_react.default.createElement(_reactTransitionGroup.CSSTransition, {
+    in: true,
+    appear: true,
+    timeout: 1000,
+    classNames: "appear"
+  }, /*#__PURE__*/_react.default.createElement(_Contact.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Contact.StyledHeading, null, "Let's talk"), /*#__PURE__*/_react.default.createElement(_Contact.StyledLink, {
+    to: "mailto:aayush9152@gmail.com"
+  }, "Sey Hello")));
+};
+
+var _default = Contact;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./Contact.style":"Components/Contact/Contact.style.js","react-transition-group":"../node_modules/react-transition-group/esm/index.js","../../style.css":"style.css"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -62950,6 +63049,8 @@ var _App = require("./App.style");
 
 var _Projects = _interopRequireDefault(require("./Components/Projects/Projects"));
 
+var _Contact = _interopRequireDefault(require("./Components/Contact/Contact"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
@@ -62979,7 +63080,7 @@ var App = function App() {
       showLoader = _useState4[0],
       setShowLoader = _useState4[1];
 
-  var _useState5 = (0, _react.useState)( /*#__PURE__*/_react.default.createElement(_Projects.default, null)),
+  var _useState5 = (0, _react.useState)( /*#__PURE__*/_react.default.createElement(_Home.default, null)),
       _useState6 = _slicedToArray(_useState5, 2),
       currentSection = _useState6[0],
       setCurrentSection = _useState6[1];
@@ -63006,6 +63107,14 @@ var App = function App() {
     setCurrentSection( /*#__PURE__*/_react.default.createElement(_Education.default, null));
   };
 
+  var onClickProject = function onClickProject() {
+    setCurrentSection( /*#__PURE__*/_react.default.createElement(_Projects.default, null));
+  };
+
+  var onClickContact = function onClickContact() {
+    setCurrentSection( /*#__PURE__*/_react.default.createElement(_Contact.default, null));
+  };
+
   return /*#__PURE__*/_react.default.createElement(_styledComponents.ThemeProvider, {
     theme: Theme
   }, /*#__PURE__*/_react.default.createElement(_Reset.default, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, showLoader ? /*#__PURE__*/_react.default.createElement(_Loader.default, null) : /*#__PURE__*/_react.default.createElement(_reactTransitionGroup.CSSTransition, {
@@ -63017,13 +63126,15 @@ var App = function App() {
     change: changeTheme,
     Theme: Theme,
     onClickEducation: onClickEducation,
-    onClickHome: onClickHome
+    onClickHome: onClickHome,
+    onClickProject: onClickProject,
+    onClickContact: onClickContact
   }), /*#__PURE__*/_react.default.createElement(_App.StyledHeroContainer, null, currentSection), /*#__PURE__*/_react.default.createElement(_SideSocialBar.default, null), /*#__PURE__*/_react.default.createElement(_SideMailBar.default, null)))));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./GlobalStyles/Reset.style":"GlobalStyles/Reset.style.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./GlobalStyles/Theme":"GlobalStyles/Theme.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./Components/Loader/Loader":"Components/Loader/Loader.js","./Components/Navbar/Navbar":"Components/Navbar/Navbar.js","./Components/Home/Home":"Components/Home/Home.js","./Components/SideBar/SideSocialBar":"Components/SideBar/SideSocialBar.js","./Components/SideBar/SideMailBar":"Components/SideBar/SideMailBar.js","react-transition-group":"../node_modules/react-transition-group/esm/index.js","./style.css":"style.css","./Components/Education/Education":"Components/Education/Education.js","./App.style":"App.style.js","./Components/Projects/Projects":"Components/Projects/Projects.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./GlobalStyles/Reset.style":"GlobalStyles/Reset.style.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./GlobalStyles/Theme":"GlobalStyles/Theme.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./Components/Loader/Loader":"Components/Loader/Loader.js","./Components/Navbar/Navbar":"Components/Navbar/Navbar.js","./Components/Home/Home":"Components/Home/Home.js","./Components/SideBar/SideSocialBar":"Components/SideBar/SideSocialBar.js","./Components/SideBar/SideMailBar":"Components/SideBar/SideMailBar.js","react-transition-group":"../node_modules/react-transition-group/esm/index.js","./style.css":"style.css","./Components/Education/Education":"Components/Education/Education.js","./App.style":"App.style.js","./Components/Projects/Projects":"Components/Projects/Projects.js","./Components/Contact/Contact":"Components/Contact/Contact.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -63065,7 +63176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36873" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33853" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

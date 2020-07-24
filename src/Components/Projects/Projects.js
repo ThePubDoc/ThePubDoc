@@ -12,6 +12,7 @@ import {
 	StyledButton,
 } from './Projects.style';
 
+import { CSSTransition } from 'react-transition-group';
 import '../../style.css';
 import { projects } from './data';
 
@@ -47,23 +48,25 @@ const Projects = () => {
 	};
 
 	return (
-		<StyledContainer>
-			<StyledGridContainer>
-				<StyledProjectName>{projects[currentProject].name}</StyledProjectName>
-				<StyledDescription>
-					{projects[currentProject].description}
-				</StyledDescription>
-				<StyledScreenshot src={projects[currentProject].image} />
-			</StyledGridContainer>
-			<StyleNavigationContainer>
-				<StyledButton disabled={!hasPrevious} onClick={previous}>
-					<StyledLeftArrow />
-				</StyledButton>
-				<StyledButton disabled={!hasNext} onClick={next}>
-					<StyledRightArrow />
-				</StyledButton>
-			</StyleNavigationContainer>
-		</StyledContainer>
+		<CSSTransition in={true} appear={true} timeout={1000} classNames='appear'>
+			<StyledContainer>
+				<StyledGridContainer>
+					<StyledProjectName>{projects[currentProject].name}</StyledProjectName>
+					<StyledDescription>
+						{projects[currentProject].description}
+					</StyledDescription>
+					<StyledScreenshot src={projects[currentProject].image} />
+				</StyledGridContainer>
+				<StyleNavigationContainer>
+					<StyledButton disabled={!hasPrevious} onClick={previous}>
+						<StyledLeftArrow />
+					</StyledButton>
+					<StyledButton disabled={!hasNext} onClick={next}>
+						<StyledRightArrow />
+					</StyledButton>
+				</StyleNavigationContainer>
+			</StyledContainer>
+		</CSSTransition>
 	);
 };
 
