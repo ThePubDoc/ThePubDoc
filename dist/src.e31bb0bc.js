@@ -62553,14 +62553,96 @@ exports.StyledHeroContainer = StyledHeroContainer;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.StyledContainer = void 0;
+exports.StyledScreenshot = exports.StyledDescription = exports.StyledProjectName = exports.StyledGridContainer = exports.StyledRightArrow = exports.StyledLeftArrow = exports.StyledButton = exports.StyleNavigationContainer = exports.StyledContainer = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+var _ti = require("react-icons/ti");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n\tgrid-row-start: 1;\n\tgrid-row-end: 3;\n\tgrid-column-start: 2;\n\theight: 100%;\n\twidth: 100%;\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n\tline-height: 2;\n\ttext-align: justify;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n\tmargin: 2rem 0;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n\tdisplay: grid;\n\tgrid-template-columns: 60% 40%;\n\tcolumn-gap: 3rem;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n\tfont-size: 2rem;\n\tmargin: 0 1rem;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n\tfont-size: 2rem;\n\tmargin: 0 1rem;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: center;\n\talign-items: center;\n\twidth: 100%;\n\tmargin: 5rem 0;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  margin: auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: flex-start;\n\tmargin: auto;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -62574,7 +62656,39 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var StyledContainer = _styledComponents.default.div(_templateObject());
 
 exports.StyledContainer = StyledContainer;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"Components/Projects/data.js":[function(require,module,exports) {
+
+var StyleNavigationContainer = _styledComponents.default.div(_templateObject2());
+
+exports.StyleNavigationContainer = StyleNavigationContainer;
+
+var StyledButton = _styledComponents.default.button(_templateObject3());
+
+exports.StyledButton = StyledButton;
+var StyledLeftArrow = (0, _styledComponents.default)(_ti.TiArrowLeftThick)(_templateObject4());
+exports.StyledLeftArrow = StyledLeftArrow;
+var StyledRightArrow = (0, _styledComponents.default)(_ti.TiArrowRightThick)(_templateObject5());
+exports.StyledRightArrow = StyledRightArrow;
+
+var StyledGridContainer = _styledComponents.default.div(_templateObject6());
+
+exports.StyledGridContainer = StyledGridContainer;
+
+var StyledProjectName = _styledComponents.default.h1(_templateObject7());
+
+exports.StyledProjectName = StyledProjectName;
+
+var StyledDescription = _styledComponents.default.h3(_templateObject8());
+
+exports.StyledDescription = StyledDescription;
+
+var StyledScreenshot = _styledComponents.default.img.attrs(function (props) {
+  return {
+    src: props.src
+  };
+})(_templateObject9());
+
+exports.StyledScreenshot = StyledScreenshot;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-icons/ti":"../node_modules/react-icons/ti/index.esm.js"}],"Components/Projects/data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -62584,9 +62698,14 @@ exports.projects = void 0;
 var projects = [{
   name: 'Coub',
   description: 'A replica of coub.com with the functionality of trimming, looping and adding audios to videos. The app is made with ReactJS having REST API written in NodeJS.',
-  url: 'github.com/thepubdoc/coub',
-  image: './coub.png'
-}, {}];
+  url: 'https://github.com/thepubdoc/coub',
+  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/coub.png'
+}, {
+  name: 'Medium Crawler',
+  description: 'A web app to crawl medium.com by tags.',
+  url: 'https://github.com/ThePubDoc/medium-crawler',
+  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/medium.png'
+}];
 exports.projects = projects;
 },{}],"Components/Projects/Project.style.js":[function(require,module,exports) {
 "use strict";
@@ -62601,7 +62720,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  grid-row-start: 1;\n  grid-row-end: 3;\n  grid-column-start: 2;\n"]);
+  var data = _taggedTemplateLiteral(["\n  grid-row-start: 1;\n  grid-row-end: 3;\n  grid-column-start: 2;\n  height: 100%;\n  width: 100%;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -62631,7 +62750,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: grid;\n  grid-template-columns: 60% auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: grid;\n  grid-template-columns: 60% 40%;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -62712,7 +62831,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
 var _Projects = require("./Projects.style");
 
@@ -62724,12 +62843,71 @@ var _Project = _interopRequireDefault(require("./Project"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var Projects = function Projects() {
-  return /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, _data.projects.map(function (project) {
-    return /*#__PURE__*/_react.default.createElement(_Project.default, {
-      project: project
-    });
-  }));
+  var _useState = (0, _react.useState)(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      currentProject = _useState2[0],
+      setCurrentProject = _useState2[1];
+
+  var _useState3 = (0, _react.useState)(true),
+      _useState4 = _slicedToArray(_useState3, 2),
+      hasNext = _useState4[0],
+      setHasNext = _useState4[1];
+
+  var _useState5 = (0, _react.useState)(false),
+      _useState6 = _slicedToArray(_useState5, 2),
+      hasPrevious = _useState6[0],
+      setHasPrevious = _useState6[1];
+
+  var previous = function previous() {
+    if (currentProject === 1) {
+      setCurrentProject(currentProject - 1);
+      setHasNext(true);
+      setHasPrevious(false);
+    } else {
+      setCurrentProject(currentProject - 1);
+      setHasPrevious(true);
+      setHasNext(true);
+    }
+  };
+
+  var next = function next() {
+    if (currentProject === _data.projects.length - 2) {
+      setCurrentProject(currentProject + 1);
+      setHasNext(false);
+      setHasPrevious(true);
+    } else {
+      setCurrentProject(currentProject + 1);
+      setHasNext(true);
+      setHasPrevious(true);
+    }
+  };
+
+  return /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledGridContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledProjectName, null, _data.projects[currentProject].name), /*#__PURE__*/_react.default.createElement(_Projects.StyledDescription, null, _data.projects[currentProject].description), /*#__PURE__*/_react.default.createElement(_Projects.StyledScreenshot, {
+    src: _data.projects[currentProject].image
+  })), /*#__PURE__*/_react.default.createElement(_Projects.StyleNavigationContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledButton, {
+    disabled: !hasPrevious,
+    onClick: previous
+  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledLeftArrow, null)), /*#__PURE__*/_react.default.createElement(_Projects.StyledButton, {
+    disabled: !hasNext,
+    onClick: next
+  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledRightArrow, null))));
 };
 
 var _default = Projects;
@@ -62887,7 +63065,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39867" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36873" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
