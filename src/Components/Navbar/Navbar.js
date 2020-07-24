@@ -34,13 +34,13 @@ const Navbar = ({ change, Theme, onClickEducation, onClickHome }) => {
         <StyledLink onClick={onClickEducation}>
           <h3>Education</h3>
         </StyledLink>
-        <StyledLink to='/home'>
-          <h3>Work</h3>
+        <StyledLink>
+          <h3>Experience</h3>
         </StyledLink>
-        <StyledLink to='/home'>
+        <StyledLink>
           <h3>Projects</h3>
         </StyledLink>
-        <StyledLink to='/home'>
+        <StyledLink>
           <h3>Contact</h3>
         </StyledLink>
         <StyledSwitch

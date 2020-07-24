@@ -8,6 +8,8 @@ import {
 } from './Education.style';
 import { CSSTransition } from 'react-transition-group';
 import '../../style.css';
+
+import { education } from './data';
 const Education = () => {
   return (
     <CSSTransition in={true} appear={true} timeout={1000} classNames='appear'>
@@ -15,8 +17,7 @@ const Education = () => {
         <StyledUniversity>
           <StyledLogo src='https://raw.githubusercontent.com/Varun-garg/GBU_Timetables/master/app/src/main/res/drawable-xhdpi/logo.png' />
           <h1>Gautam Buddha University, Greater Noida, India</h1>
-          <h3>Intergrated B.Tech+M.Tech in Computer Science And Engineering</h3>
-          <h3>2015-20</h3>
+          <h3>Intergrated B.Tech+M.Tech (CSE) - 2015-20</h3>
         </StyledUniversity>
         <StyledDescription>
           I have done my post graduation from Gautam Buddha University. I have

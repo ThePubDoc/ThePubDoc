@@ -15,7 +15,7 @@ export const StyledUniversity = styled.div`
 
 export const StyledLogo = styled.img.attrs((props) => ({ src: props.src }))`
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 3;
 `;
 
 export const StyledDescription = styled.p`
