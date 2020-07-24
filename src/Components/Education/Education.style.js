@@ -4,7 +4,7 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 30% auto;
+  margin: auto;
 `;
 
 export const StyledUniversity = styled.div`

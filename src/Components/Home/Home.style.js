@@ -6,7 +6,7 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 30% auto;
+  margin: auto;
 `;
 
 export const StyledIntroLine = styled.h2`

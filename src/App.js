@@ -20,11 +20,12 @@ import './style.css';
 import Education from './Components/Education/Education';
 
 import { StyledHeroContainer } from './App.style';
+import Projects from './Components/Projects/Projects';
 
 const App = () => {
   const [Theme, setTheme] = useState(darkTheme);
   const [showLoader, setShowLoader] = useState(true);
-  const [currentSection, setCurrentSection] = useState(<Home />);
+  const [currentSection, setCurrentSection] = useState(<Projects />);
 
   const changeTheme = () => {
     if (Theme === darkTheme) {
