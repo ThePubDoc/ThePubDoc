@@ -1,40 +1,40 @@
 {
-  "name": "thepubdoc",
-  "version": "1.0.0",
-  "description": "<!-- **ThePubDoc/ThePubDoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
-  "main": "index.js",
-  "homepage": "http://thepubdoc.github.io/ThePubDoc",
-  "scripts": {
-    "predeploy": "rm -rf dist && parcel build src/index.html --public-url ./",
-    "deploy": "gh-pages -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThePubDoc/ThePubDoc.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ThePubDoc/ThePubDoc/issues"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "parcel-bundler": "^1.12.4"
-  },
-  "dependencies": {
-    "gh-pages": "^3.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-icons": "^3.10.0",
-    "react-router-dom": "^5.2.0",
-    "react-switch": "^5.0.1",
-    "react-transition-group": "^4.4.1",
-    "styled-components": "^5.1.1",
-    "typewriter-effect": "^2.13.1"
-  }
+	"name": "thepubdoc",
+	"version": "1.0.0",
+	"description": "<!-- **ThePubDoc/ThePubDoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+	"main": "index.js",
+	"homepage": "http://thepubdoc.github.io",
+	"scripts": {
+		"predeploy": "rm -rf dist && parcel build src/index.html --public-url ./",
+		"deploy": "gh-pages -d dist",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "parcel src/index.html",
+		"build": "parcel build src/index.html --public-url ./"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ThePubDoc/ThePubDoc.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ThePubDoc/ThePubDoc/issues"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.10.5",
+		"@babel/preset-env": "^7.10.4",
+		"@babel/preset-react": "^7.10.4",
+		"parcel-bundler": "^1.12.4"
+	},
+	"dependencies": {
+		"gh-pages": "^3.1.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-icons": "^3.10.0",
+		"react-router-dom": "^5.2.0",
+		"react-switch": "^5.0.1",
+		"react-transition-group": "^4.4.1",
+		"styled-components": "^5.1.1",
+		"typewriter-effect": "^2.13.1"
+	}
 }
