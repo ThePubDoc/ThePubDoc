@@ -62559,7 +62559,7 @@ exports.StyledHeroContainer = StyledHeroContainer;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.StyledScreenshot = exports.StyledDescription = exports.StyledProjectName = exports.StyledGridContainer = exports.StyledRightArrow = exports.StyledLeftArrow = exports.StyledButton = exports.StyleNavigationContainer = exports.StyledContainer = void 0;
+exports.StyledTechnologies = exports.StyledScreenshot = exports.StyledDescription = exports.StyledProjectName = exports.StyledGridContainer = exports.StyledRightArrow = exports.StyledLeftArrow = exports.StyledButton = exports.StyleNavigationContainer = exports.StyledContainer = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
@@ -62567,8 +62567,18 @@ var _ti = require("react-icons/ti");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject10() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject9() {
-  var data = _taggedTemplateLiteral(["\n\tgrid-row-start: 1;\n\tgrid-row-end: 3;\n\tgrid-column-start: 2;\n\theight: 100%;\n\twidth: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tgrid-row-start: 1;\n\tgrid-row-end: 6;\n\tgrid-column-start: 2;\n\theight: 100%;\n\twidth: 100%;\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -62598,7 +62608,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: grid;\n\tgrid-template-columns: 60% 40%;\n\tcolumn-gap: 3rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: grid;\n\tgrid-template-columns: 50% 50%;\n\tcolumn-gap: 3rem;\n\theight: 20vh;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -62608,7 +62618,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n\tfont-size: 2rem;\n\tmargin: 0 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tfont-size: 1.5rem;\n\tmargin: 0.5rem 1rem;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -62618,7 +62628,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n\tfont-size: 2rem;\n\tmargin: 0 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tfont-size: 1.5rem;\n\tmargin: 0.5rem 1rem;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -62628,7 +62638,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 0 1rem;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -62694,6 +62704,10 @@ var StyledScreenshot = _styledComponents.default.img.attrs(function (props) {
 })(_templateObject9());
 
 exports.StyledScreenshot = StyledScreenshot;
+
+var StyledTechnologies = _styledComponents.default.div(_templateObject10());
+
+exports.StyledTechnologies = StyledTechnologies;
 },{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-icons/ti":"../node_modules/react-icons/ti/index.esm.js"}],"Components/Projects/data.js":[function(require,module,exports) {
 "use strict";
 
@@ -62705,141 +62719,29 @@ var projects = [{
   name: 'Coub',
   description: 'A replica of coub.com with the functionality of trimming, looping and adding audios to videos. The app is made with ReactJS having REST API written in NodeJS.',
   url: 'https://github.com/thepubdoc/coub',
-  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/coub.png'
+  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/coub.png',
+  tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg']
 }, {
   name: 'Medium Crawler',
   description: 'A web app to crawl medium.com by tags.',
   url: 'https://github.com/ThePubDoc/medium-crawler',
-  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/medium.png'
+  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/medium.png',
+  tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg']
 }, {
   name: 'Email Client',
   description: 'A web app to send bulk mails to multiple contacts. Contacts can be uploaded from .csv file. The mailer is designed using AWS SES service and REST API is written in NodeJS.',
   url: 'https://github.com/ThePubDoc/email-client',
-  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/email-client.png'
+  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/email-client.png',
+  tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg']
 }, {
   name: '',
   description: 'For more projects visit my Github account',
   url: 'https://github.com/ThePubDoc',
-  image: ''
+  image: '',
+  tech: []
 }];
 exports.projects = projects;
-},{}],"Components/Projects/Project.style.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.StyledScreenshot = exports.StyledDescription = exports.StyledProjectName = exports.StyledContainer = void 0;
-
-var _styledComponents = _interopRequireDefault(require("styled-components"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  grid-row-start: 1;\n  grid-row-end: 3;\n  grid-column-start: 2;\n  height: 100%;\n  width: 100%;\n"]);
-
-  _templateObject4 = function _templateObject4() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject3() {
-  var data = _taggedTemplateLiteral([""]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject2() {
-  var data = _taggedTemplateLiteral([""]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: grid;\n  grid-template-columns: 60% 40%;\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var StyledContainer = _styledComponents.default.div(_templateObject());
-
-exports.StyledContainer = StyledContainer;
-
-var StyledProjectName = _styledComponents.default.h1(_templateObject2());
-
-exports.StyledProjectName = StyledProjectName;
-
-var StyledDescription = _styledComponents.default.h3(_templateObject3());
-
-exports.StyledDescription = StyledDescription;
-
-var StyledScreenshot = _styledComponents.default.img.attrs(function (props) {
-  return {
-    src: props.src
-  };
-})(_templateObject4());
-
-exports.StyledScreenshot = StyledScreenshot;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"Components/Projects/Project.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _Project = require("./Project.style");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var Project = function Project(_ref) {
-  var project = _ref.project;
-
-  var _useState = (0, _react.useState)(project),
-      _useState2 = _slicedToArray(_useState, 2),
-      Project = _useState2[0],
-      setProject = _useState2[1];
-
-  return /*#__PURE__*/_react.default.createElement(_Project.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Project.StyledProjectName, null, Project.name), /*#__PURE__*/_react.default.createElement(_Project.StyledDescription, null, Project.description), /*#__PURE__*/_react.default.createElement(_Project.StyledScreenshot, {
-    src: Project.image
-  }));
-};
-
-var _default = Project;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Project.style":"Components/Projects/Project.style.js"}],"Components/Projects/Projects.js":[function(require,module,exports) {
+},{}],"Components/Projects/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -62856,10 +62758,6 @@ var _reactTransitionGroup = require("react-transition-group");
 require("../../style.css");
 
 var _data = require("./data");
-
-var _Project = _interopRequireDefault(require("./Project"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -62922,7 +62820,9 @@ var Projects = function Projects() {
     appear: true,
     timeout: 1000,
     classNames: "appear"
-  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledGridContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledProjectName, null, _data.projects[currentProject].name), /*#__PURE__*/_react.default.createElement(_Projects.StyledDescription, null, _data.projects[currentProject].description), /*#__PURE__*/_react.default.createElement(_Projects.StyledScreenshot, {
+  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledGridContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledProjectName, null, _data.projects[currentProject].name), /*#__PURE__*/_react.default.createElement(_Projects.StyledDescription, null, _data.projects[currentProject].description), /*#__PURE__*/_react.default.createElement(_Projects.StyledTechnologies, null, /*#__PURE__*/_react.default.createElement("h3", null, "Technologies Used:"), _data.projects[currentProject].tech.map(function (tech) {
+    return /*#__PURE__*/_react.default.createElement("h3", null, tech);
+  })), /*#__PURE__*/_react.default.createElement(_Projects.StyledScreenshot, {
     src: _data.projects[currentProject].image
   })), /*#__PURE__*/_react.default.createElement(_Projects.StyleNavigationContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledButton, {
     disabled: !hasPrevious,
@@ -62935,7 +62835,7 @@ var Projects = function Projects() {
 
 var _default = Projects;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Projects.style":"Components/Projects/Projects.style.js","react-transition-group":"../node_modules/react-transition-group/esm/index.js","../../style.css":"style.css","./data":"Components/Projects/data.js","./Project":"Components/Projects/Project.js"}],"Components/Contact/Contact.style.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Projects.style":"Components/Projects/Projects.style.js","react-transition-group":"../node_modules/react-transition-group/esm/index.js","../../style.css":"style.css","./data":"Components/Projects/data.js"}],"Components/Contact/Contact.style.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

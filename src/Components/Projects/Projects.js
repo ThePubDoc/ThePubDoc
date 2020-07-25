@@ -10,13 +10,12 @@ import {
 	StyledDescription,
 	StyledScreenshot,
 	StyledButton,
+	StyledTechnologies,
 } from './Projects.style';
 
 import { CSSTransition } from 'react-transition-group';
 import '../../style.css';
 import { projects } from './data';
-
-import Project from './Project';
 
 const Projects = () => {
 	const [currentProject, setCurrentProject] = useState(0);
@@ -55,6 +54,12 @@ const Projects = () => {
 					<StyledDescription>
 						{projects[currentProject].description}
 					</StyledDescription>
+					<StyledTechnologies>
+						<h3>Technologies Used:</h3>
+						{projects[currentProject].tech.map((tech) => (
+							<h3>{tech}</h3>
+						))}
+					</StyledTechnologies>
 					<StyledScreenshot src={projects[currentProject].image} />
 				</StyledGridContainer>
 				<StyleNavigationContainer>

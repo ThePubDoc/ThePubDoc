@@ -6,6 +6,7 @@ export const projects = [
 		url: 'https://github.com/thepubdoc/coub',
 		image:
 			'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/coub.png',
+		tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg'],
 	},
 	{
 		name: 'Medium Crawler',
@@ -13,6 +14,7 @@ export const projects = [
 		url: 'https://github.com/ThePubDoc/medium-crawler',
 		image:
 			'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/medium.png',
+		tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg'],
 	},
 	{
 		name: 'Email Client',
@@ -21,11 +23,13 @@ export const projects = [
 		url: 'https://github.com/ThePubDoc/email-client',
 		image:
 			'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/email-client.png',
+		tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg'],
 	},
 	{
 		name: '',
 		description: 'For more projects visit my Github account',
 		url: 'https://github.com/ThePubDoc',
 		image: '',
+		tech: [],
 	},
 ];
