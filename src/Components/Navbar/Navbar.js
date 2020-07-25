@@ -30,7 +30,7 @@ const Navbar = ({
 
 	return (
 		<StyledNavbar>
-			<StyledLogo>
+			<StyledLogo onClick={onClickHome}>
 				<h1>A</h1>
 			</StyledLogo>
 			<StyledLinks>

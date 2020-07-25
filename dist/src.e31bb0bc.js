@@ -35952,7 +35952,7 @@ var _reactSwitch = _interopRequireDefault(require("react-switch"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 0 1rem;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -35962,7 +35962,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  color: inherit;\n  margin: 0 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tcolor: inherit;\n\tmargin: 0 1rem;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -35972,7 +35972,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: row;\n\talign-items: center;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -35982,7 +35982,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n\tcursor: pointer;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -35992,7 +35992,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  padding: 2rem 5rem;\n  z-index: 1000;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-between;\n\talign-items: center;\n\tpadding: 2rem 5rem;\n\tz-index: 1000;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -38228,7 +38228,9 @@ var Navbar = function Navbar(_ref) {
       setChecked(false);
     }
   }, [Theme]);
-  return /*#__PURE__*/_react.default.createElement(_Navbar.StyledNavbar, null, /*#__PURE__*/_react.default.createElement(_Navbar.StyledLogo, null, /*#__PURE__*/_react.default.createElement("h1", null, "A")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLinks, null, /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, {
+  return /*#__PURE__*/_react.default.createElement(_Navbar.StyledNavbar, null, /*#__PURE__*/_react.default.createElement(_Navbar.StyledLogo, {
+    onClick: onClickHome
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "A")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLinks, null, /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, {
     onClick: onClickHome
   }, /*#__PURE__*/_react.default.createElement("h3", null, "Home")), /*#__PURE__*/_react.default.createElement(_Navbar.StyledLink, {
     onClick: onClickEducation
@@ -62896,7 +62898,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.StyledLink = exports.StyledHeading = exports.StyledContainer = void 0;
+exports.StyledMailLink = exports.StyledHeading = exports.StyledContainer = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
@@ -62905,7 +62907,7 @@ var _reactRouterDom = require("react-router-dom");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n\tcolor: inherit;\n\twidth: 15%;\n\tmargin: 10rem auto;\n\tborder: 1px solid;\n\tpadding: 0.8rem 1rem;\n\tborder-radius: 5px;\n\ttext-align: center;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -62943,8 +62945,15 @@ exports.StyledContainer = StyledContainer;
 var StyledHeading = _styledComponents.default.h1(_templateObject2());
 
 exports.StyledHeading = StyledHeading;
-var StyledLink = (0, _styledComponents.default)(_reactRouterDom.Link)(_templateObject3());
-exports.StyledLink = StyledLink;
+
+var StyledMailLink = _styledComponents.default.a.attrs(function (props) {
+  return {
+    href: props.src,
+    target: '_blank'
+  };
+})(_templateObject3());
+
+exports.StyledMailLink = StyledMailLink;
 },{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"Components/Contact/Contact.js":[function(require,module,exports) {
 "use strict";
 
@@ -62969,9 +62978,9 @@ var Contact = function Contact() {
     appear: true,
     timeout: 1000,
     classNames: "appear"
-  }, /*#__PURE__*/_react.default.createElement(_Contact.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Contact.StyledHeading, null, "Let's talk"), /*#__PURE__*/_react.default.createElement(_Contact.StyledLink, {
-    to: "mailto:aayush9152@gmail.com"
-  }, "Sey Hello")));
+  }, /*#__PURE__*/_react.default.createElement(_Contact.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Contact.StyledHeading, null, "Let's Get In Touch"), /*#__PURE__*/_react.default.createElement(_Contact.StyledMailLink, {
+    src: "mailto:aayush9152@gmail.com"
+  }, "Say Hello")));
 };
 
 var _default = Contact;

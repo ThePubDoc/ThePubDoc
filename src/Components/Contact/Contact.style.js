@@ -10,4 +10,15 @@ export const StyledContainer = styled.div`
 
 export const StyledHeading = styled.h1``;
 
-export const StyledLink = styled(Link)``;
+export const StyledMailLink = styled.a.attrs((props) => ({
+	href: props.src,
+	target: '_blank',
+}))`
+	color: inherit;
+	width: 15%;
+	margin: 10rem auto;
+	border: 1px solid;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+	text-align: center;
+`;
