@@ -62711,6 +62711,16 @@ var projects = [{
   description: 'A web app to crawl medium.com by tags.',
   url: 'https://github.com/ThePubDoc/medium-crawler',
   image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/medium.png'
+}, {
+  name: 'Email Client',
+  description: 'A web app to send bulk mails to multiple contacts. Contacts can be uploaded from .csv file. The mailer is designed using AWS SES service and REST API is written in NodeJS.',
+  url: 'https://github.com/ThePubDoc/email-client',
+  image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/email-client.png'
+}, {
+  name: '',
+  description: 'For more projects visit my Github account',
+  url: 'https://github.com/ThePubDoc',
+  image: ''
 }];
 exports.projects = projects;
 },{}],"Components/Projects/Project.style.js":[function(require,module,exports) {
@@ -63176,7 +63186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33853" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36767" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
