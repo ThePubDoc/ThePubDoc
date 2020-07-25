@@ -38,7 +38,7 @@ export const StyledRightArrow = styled(TiArrowRightThick)`
 
 export const StyledGridContainer = styled.div`
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 50% 50%;
 	column-gap: 3rem;
 	height: 50vh;
 `;
@@ -68,14 +68,14 @@ export const StyledTechnologies = styled.div`
 	display: grid;
 	grid-template-columns: auto auto;
 	margin: 2rem 0;
-	width: 50%;
+	width: 100%;
 	gap: 1rem;
 	grid-row-start: 3;
 
 	h2 {
 		margin: 1rem 0;
 		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-end: 3;
 	}
 `;
 
@@ -93,7 +93,6 @@ export const StyledArrow = styled(TiArrowRightThick)`
 export const StyledGithub = styled(AiFillGithub)`
 	margin: 1rem 0;
 	font-size: 1.5rem;
-
 	height: 60%;
 `;
 
