@@ -6,15 +6,16 @@ export const projects = [
 		url: 'https://github.com/thepubdoc/coub',
 		image:
 			'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/coub.png',
-		tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg'],
+		tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDB', 'ffmpeg', 'AWS S3'],
 	},
 	{
 		name: 'Medium Crawler',
-		description: 'A web app to crawl medium.com by tags.',
+		description:
+			'A web app to crawl medium.com by tags. Crawling time for blogs was decreased for next time from 4000-5000ms to about 2-4 ms by saving them to MongoDB collection.',
 		url: 'https://github.com/ThePubDoc/medium-crawler',
 		image:
 			'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/medium.png',
-		tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg'],
+		tech: ['NodeJS', 'Express', 'MongoDB', 'Cheerio'],
 	},
 	{
 		name: 'Email Client',
@@ -23,13 +24,6 @@ export const projects = [
 		url: 'https://github.com/ThePubDoc/email-client',
 		image:
 			'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/email-client.png',
-		tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg'],
-	},
-	{
-		name: '',
-		description: 'For more projects visit my Github account',
-		url: 'https://github.com/ThePubDoc',
-		image: '',
-		tech: [],
+		tech: ['NodeJS', 'Express', 'MongoDB', 'AWS SES'],
 	},
 ];

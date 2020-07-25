@@ -11,6 +11,10 @@ import {
 	StyledScreenshot,
 	StyledButton,
 	StyledTechnologies,
+	StyledArrow,
+	StyledTechnology,
+	StyledGithub,
+	StyledLink,
 } from './Projects.style';
 
 import { CSSTransition } from 'react-transition-group';
@@ -51,13 +55,19 @@ const Projects = () => {
 			<StyledContainer>
 				<StyledGridContainer>
 					<StyledProjectName>{projects[currentProject].name}</StyledProjectName>
+					<StyledLink src={projects[currentProject].url}>
+						<StyledGithub />
+					</StyledLink>
 					<StyledDescription>
 						{projects[currentProject].description}
 					</StyledDescription>
 					<StyledTechnologies>
-						<h3>Technologies Used:</h3>
+						<h2>Technologies Used:</h2>
 						{projects[currentProject].tech.map((tech) => (
-							<h3>{tech}</h3>
+							<StyledTechnology>
+								<StyledArrow />
+								<p>{tech}</p>
+							</StyledTechnology>
 						))}
 					</StyledTechnologies>
 					<StyledScreenshot src={projects[currentProject].image} />

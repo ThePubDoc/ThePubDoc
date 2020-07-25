@@ -62539,7 +62539,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 50%;\n  margin: 26vh auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n\twidth: 50%;\n\tmargin: 25vh auto;\n\theight: 50vh;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -62559,16 +62559,58 @@ exports.StyledHeroContainer = StyledHeroContainer;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.StyledTechnologies = exports.StyledScreenshot = exports.StyledDescription = exports.StyledProjectName = exports.StyledGridContainer = exports.StyledRightArrow = exports.StyledLeftArrow = exports.StyledButton = exports.StyleNavigationContainer = exports.StyledContainer = void 0;
+exports.StyledLink = exports.StyledGithub = exports.StyledArrow = exports.StyledTechnology = exports.StyledTechnologies = exports.StyledScreenshot = exports.StyledDescription = exports.StyledProjectName = exports.StyledGridContainer = exports.StyledRightArrow = exports.StyledLeftArrow = exports.StyledButton = exports.StyleNavigationContainer = exports.StyledContainer = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _ti = require("react-icons/ti");
 
+var _ai = require("react-icons/ai");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject14() {
+  var data = _taggedTemplateLiteral(["\n\tcolor: inherit;\n\tjustify-self: flex-end;\n"]);
+
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = _taggedTemplateLiteral(["\n\tmargin: 1rem 0;\n\tfont-size: 1.5rem;\n\n\theight: 60%;\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = _taggedTemplateLiteral(["\n\tmargin: 0 0.2rem;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: flex-start;\n\talign-items: center;\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject10() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: grid;\n\tgrid-template-columns: auto auto;\n\tmargin: 2rem 0;\n\twidth: 50%;\n\tgap: 1rem;\n\tgrid-row-start: 3;\n\n\th2 {\n\t\tmargin: 1rem 0;\n\t\tgrid-column-start: 1;\n\t\tgrid-column-end: 4;\n\t}\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -62578,7 +62620,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = _taggedTemplateLiteral(["\n\tgrid-row-start: 1;\n\tgrid-row-end: 6;\n\tgrid-column-start: 2;\n\theight: 100%;\n\twidth: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tgrid-row-start: 2;\n\tgrid-row-end: 6;\n\tgrid-column-start: 2;\n\theight: 100%;\n\twidth: 100%;\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -62588,7 +62630,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n\tline-height: 2;\n\ttext-align: justify;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tline-height: 2;\n\t/* text-align: justify; */\n\tgrid-row-start: 2;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -62598,7 +62640,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n\tmargin: 2rem 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 2rem 0;\n\tgrid-row-start: 1;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -62608,7 +62650,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: grid;\n\tgrid-template-columns: 50% 50%;\n\tcolumn-gap: 3rem;\n\theight: 20vh;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: grid;\n\tgrid-template-columns: 40% 60%;\n\tcolumn-gap: 3rem;\n\theight: 50vh;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -62618,7 +62660,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n\tfont-size: 1.5rem;\n\tmargin: 0.5rem 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tfont-size: 2rem;\n\t/* margin: 0.5rem 1rem; */\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -62628,7 +62670,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n\tfont-size: 1.5rem;\n\tmargin: 0.5rem 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tfont-size: 2rem;\n\t/* margin: 0.5rem 1rem; */\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -62638,7 +62680,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\tmargin: 0 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 0 1rem;\n\tpadding: 0.2rem 0.5rem;\n\tborder: none;\n\tbackground-color: transparent;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -62708,7 +62750,24 @@ exports.StyledScreenshot = StyledScreenshot;
 var StyledTechnologies = _styledComponents.default.div(_templateObject10());
 
 exports.StyledTechnologies = StyledTechnologies;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-icons/ti":"../node_modules/react-icons/ti/index.esm.js"}],"Components/Projects/data.js":[function(require,module,exports) {
+
+var StyledTechnology = _styledComponents.default.div(_templateObject11());
+
+exports.StyledTechnology = StyledTechnology;
+var StyledArrow = (0, _styledComponents.default)(_ti.TiArrowRightThick)(_templateObject12());
+exports.StyledArrow = StyledArrow;
+var StyledGithub = (0, _styledComponents.default)(_ai.AiFillGithub)(_templateObject13());
+exports.StyledGithub = StyledGithub;
+
+var StyledLink = _styledComponents.default.a.attrs(function (props) {
+  return {
+    href: props.src,
+    target: '_blank'
+  };
+})(_templateObject14());
+
+exports.StyledLink = StyledLink;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-icons/ti":"../node_modules/react-icons/ti/index.esm.js","react-icons/ai":"../node_modules/react-icons/ai/index.esm.js"}],"Components/Projects/data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -62720,25 +62779,19 @@ var projects = [{
   description: 'A replica of coub.com with the functionality of trimming, looping and adding audios to videos. The app is made with ReactJS having REST API written in NodeJS.',
   url: 'https://github.com/thepubdoc/coub',
   image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/coub.png',
-  tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg']
+  tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDB', 'ffmpeg', 'AWS S3']
 }, {
   name: 'Medium Crawler',
-  description: 'A web app to crawl medium.com by tags.',
+  description: 'A web app to crawl medium.com by tags. Crawling time for blogs was decreased for next time from 4000-5000ms to about 2-4 ms by saving them to MongoDB collection.',
   url: 'https://github.com/ThePubDoc/medium-crawler',
   image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/medium.png',
-  tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg']
+  tech: ['NodeJS', 'Express', 'MongoDB', 'Cheerio']
 }, {
   name: 'Email Client',
   description: 'A web app to send bulk mails to multiple contacts. Contacts can be uploaded from .csv file. The mailer is designed using AWS SES service and REST API is written in NodeJS.',
   url: 'https://github.com/ThePubDoc/email-client',
   image: 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Projects/Images/email-client.png',
-  tech: ['NodeJS', 'Express', 'ReactJS', 'MongoDD', 'ffmpeg']
-}, {
-  name: '',
-  description: 'For more projects visit my Github account',
-  url: 'https://github.com/ThePubDoc',
-  image: '',
-  tech: []
+  tech: ['NodeJS', 'Express', 'MongoDB', 'AWS SES']
 }];
 exports.projects = projects;
 },{}],"Components/Projects/Projects.js":[function(require,module,exports) {
@@ -62820,8 +62873,10 @@ var Projects = function Projects() {
     appear: true,
     timeout: 1000,
     classNames: "appear"
-  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledGridContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledProjectName, null, _data.projects[currentProject].name), /*#__PURE__*/_react.default.createElement(_Projects.StyledDescription, null, _data.projects[currentProject].description), /*#__PURE__*/_react.default.createElement(_Projects.StyledTechnologies, null, /*#__PURE__*/_react.default.createElement("h3", null, "Technologies Used:"), _data.projects[currentProject].tech.map(function (tech) {
-    return /*#__PURE__*/_react.default.createElement("h3", null, tech);
+  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledGridContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledProjectName, null, _data.projects[currentProject].name), /*#__PURE__*/_react.default.createElement(_Projects.StyledLink, {
+    src: _data.projects[currentProject].url
+  }, /*#__PURE__*/_react.default.createElement(_Projects.StyledGithub, null)), /*#__PURE__*/_react.default.createElement(_Projects.StyledDescription, null, _data.projects[currentProject].description), /*#__PURE__*/_react.default.createElement(_Projects.StyledTechnologies, null, /*#__PURE__*/_react.default.createElement("h2", null, "Technologies Used:"), _data.projects[currentProject].tech.map(function (tech) {
+    return /*#__PURE__*/_react.default.createElement(_Projects.StyledTechnology, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, tech));
   })), /*#__PURE__*/_react.default.createElement(_Projects.StyledScreenshot, {
     src: _data.projects[currentProject].image
   })), /*#__PURE__*/_react.default.createElement(_Projects.StyleNavigationContainer, null, /*#__PURE__*/_react.default.createElement(_Projects.StyledButton, {
@@ -63086,7 +63141,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36767" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43901" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
