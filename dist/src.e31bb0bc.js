@@ -63059,15 +63059,30 @@ var App = function App() {
       currentSection = _useState6[0],
       setCurrentSection = _useState6[1];
 
+  var SavedTheme = localStorage.getItem('theme');
+
   var changeTheme = function changeTheme() {
     if (Theme === _Theme.darkTheme) {
       setTheme(_Theme.lightTheme);
+      localStorage.setItem('theme', 'light');
     } else {
       setTheme(_Theme.darkTheme);
+      localStorage.setItem('theme', 'dark');
     }
   };
 
   (0, _react.useEffect)(function () {
+    if (SavedTheme === null) {
+      setTheme(_Theme.darkTheme);
+      localStorage.setItem('theme', 'dark');
+    } else if (SavedTheme === 'dark') {
+      setTheme(_Theme.darkTheme);
+      localStorage.setItem('theme', 'dark');
+    } else {
+      setTheme(_Theme.lightTheme);
+      localStorage.setItem('theme', 'light');
+    }
+
     setTimeout(function () {
       setShowLoader(false);
     }, 8500);
@@ -63150,7 +63165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37463" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33983" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

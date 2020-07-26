@@ -28,15 +28,29 @@ const App = () => {
 	const [showLoader, setShowLoader] = useState(true);
 	const [currentSection, setCurrentSection] = useState(<Home />);
 
+	const SavedTheme = localStorage.getItem('theme');
+
 	const changeTheme = () => {
 		if (Theme === darkTheme) {
 			setTheme(lightTheme);
+			localStorage.setItem('theme', 'light');
 		} else {
 			setTheme(darkTheme);
+			localStorage.setItem('theme', 'dark');
 		}
 	};
 
 	useEffect(() => {
+		if (SavedTheme === null) {
+			setTheme(darkTheme);
+			localStorage.setItem('theme', 'dark');
+		} else if (SavedTheme === 'dark') {
+			setTheme(darkTheme);
+			localStorage.setItem('theme', 'dark');
+		} else {
+			setTheme(lightTheme);
+			localStorage.setItem('theme', 'light');
+		}
 		setTimeout(() => {
 			setShowLoader(false);
 		}, 8500);
