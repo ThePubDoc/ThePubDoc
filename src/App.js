@@ -64,7 +64,7 @@ const App = () => {
 		}
 		setTimeout(() => {
 			setShowLoader(false);
-		}, 1);
+		}, 8500);
 	}, []);
 
 	const onClickHome = () => {

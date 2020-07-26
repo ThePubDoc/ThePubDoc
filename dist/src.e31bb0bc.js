@@ -63087,7 +63087,7 @@ var App = function App() {
 
     setTimeout(function () {
       setShowLoader(false);
-    }, 1);
+    }, 8500);
   }, []);
 
   var onClickHome = function onClickHome() {
