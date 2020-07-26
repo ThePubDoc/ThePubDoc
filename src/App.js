@@ -39,7 +39,7 @@ const App = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setShowLoader(false);
-		}, 1);
+		}, 8500);
 	}, []);
 
 	const onClickHome = () => {

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import Switch from 'react-switch';
 
 export const StyledNavbar = styled.nav`
@@ -25,9 +24,10 @@ export const StyledLinks = styled.div`
 	align-items: center;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.div`
 	color: inherit;
 	margin: 0 1rem;
+	cursor: pointer;
 `;
 
 export const StyledSwitch = styled(Switch)`

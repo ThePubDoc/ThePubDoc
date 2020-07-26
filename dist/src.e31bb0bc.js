@@ -35945,8 +35945,6 @@ exports.StyledSwitch = exports.StyledLink = exports.StyledLinks = exports.Styled
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-var _reactRouterDom = require("react-router-dom");
-
 var _reactSwitch = _interopRequireDefault(require("react-switch"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -35962,7 +35960,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n\tcolor: inherit;\n\tmargin: 0 1rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tcolor: inherit;\n\tmargin: 0 1rem;\n\tcursor: pointer;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -36014,11 +36012,13 @@ exports.StyledLogo = StyledLogo;
 var StyledLinks = _styledComponents.default.div(_templateObject3());
 
 exports.StyledLinks = StyledLinks;
-var StyledLink = (0, _styledComponents.default)(_reactRouterDom.Link)(_templateObject4());
+
+var StyledLink = _styledComponents.default.div(_templateObject4());
+
 exports.StyledLink = StyledLink;
 var StyledSwitch = (0, _styledComponents.default)(_reactSwitch.default)(_templateObject5());
 exports.StyledSwitch = StyledSwitch;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-switch":"../node_modules/react-switch/index.js"}],"Components/Education/Education.style.js":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-switch":"../node_modules/react-switch/index.js"}],"Components/Education/Education.style.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45757,7 +45757,7 @@ var _ti = require("react-icons/ti");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: flex-start;\n\talign-items: center;\n\tmargin: 0.5rem 0;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -45767,7 +45767,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0 0.2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 0 0.2rem;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -45777,7 +45777,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n  display: grid;\n  grid-template-columns: auto auto;\n  margin: 2rem 0;\n  width: 50%;\n  row-gap: 0.5rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: grid;\n\tgrid-template-columns: auto auto;\n\tmargin: 2rem 0;\n\twidth: 50%;\n\trow-gap: 0.5rem;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -45787,7 +45787,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  margin: 1rem 0;\n  width: 80%;\n  line-height: 1.5;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 1rem 0;\n\twidth: 80%;\n\tline-height: 1.5;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -45797,7 +45797,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  margin: 1rem 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 1rem 0;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -45807,7 +45807,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  margin: 1rem 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 1rem 0;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -45817,7 +45817,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  margin: 1rem 0;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 1rem 0;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -45827,7 +45827,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  margin: auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: flex-start;\n\tmargin: auto;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -45891,7 +45891,7 @@ var Home = function Home() {
     appear: true,
     timeout: 1000,
     classNames: "appear"
-  }, /*#__PURE__*/_react.default.createElement(_Home.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Home.StyledIntroLine, null, "Hi, my name is"), /*#__PURE__*/_react.default.createElement(_Home.StyledName, null, "Aayush Agrawal."), /*#__PURE__*/_react.default.createElement(_Home.StyledHeading, null, "I build web applications."), /*#__PURE__*/_react.default.createElement(_Home.StyledParagraph, null, "I'm a software engineer from India. I try to build web applications using ReactJS and NodeJS. Technologies and Tools I have been working on:", /*#__PURE__*/_react.default.createElement(_Home.StyledSkillsContainer, null, /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "JavaScript")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "NodeJS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "ExpressJS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "ReactJS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "MongoDB")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "HTML/CSS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "Git"))))));
+  }, /*#__PURE__*/_react.default.createElement(_Home.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Home.StyledIntroLine, null, "Hi, my name is"), /*#__PURE__*/_react.default.createElement(_Home.StyledName, null, "Aayush Agrawal."), /*#__PURE__*/_react.default.createElement(_Home.StyledHeading, null, "I build web applications."), /*#__PURE__*/_react.default.createElement(_Home.StyledParagraph, null, "I'm a software engineer from India. I try to build web applications using ReactJS and NodeJS. Technologies and Tools I have been working on:"), /*#__PURE__*/_react.default.createElement(_Home.StyledSkillsContainer, null, /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "JavaScript")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "NodeJS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "ExpressJS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "ReactJS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "MongoDB")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "HTML/CSS")), /*#__PURE__*/_react.default.createElement(_Home.StyledSkill, null, /*#__PURE__*/_react.default.createElement(_Home.StyledArrow, null), /*#__PURE__*/_react.default.createElement("p", null, "Git")))));
 };
 
 var _default = Home;
@@ -63070,7 +63070,7 @@ var App = function App() {
   (0, _react.useEffect)(function () {
     setTimeout(function () {
       setShowLoader(false);
-    }, 1);
+    }, 8500);
   }, []);
 
   var onClickHome = function onClickHome() {
@@ -63150,7 +63150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35387" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37463" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
