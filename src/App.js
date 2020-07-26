@@ -49,16 +49,22 @@ const App = () => {
 		if (SavedTheme === null) {
 			setTheme(darkTheme);
 			localStorage.setItem('theme', 'dark');
+			icon.href =
+				'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/LightIcon.png';
 		} else if (SavedTheme === 'dark') {
 			setTheme(darkTheme);
 			localStorage.setItem('theme', 'dark');
+			icon.href =
+				'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/LightIcon.png';
 		} else {
 			setTheme(lightTheme);
 			localStorage.setItem('theme', 'light');
+			icon.href =
+				'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/DarkIcon.png';
 		}
 		setTimeout(() => {
 			setShowLoader(false);
-		}, 8500);
+		}, 1);
 	}, []);
 
 	const onClickHome = () => {

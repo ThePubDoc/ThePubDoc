@@ -63074,17 +63074,20 @@ var App = function App() {
     if (SavedTheme === null) {
       setTheme(_Theme.darkTheme);
       localStorage.setItem('theme', 'dark');
+      icon.href = 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/LightIcon.png';
     } else if (SavedTheme === 'dark') {
       setTheme(_Theme.darkTheme);
       localStorage.setItem('theme', 'dark');
+      icon.href = 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/LightIcon.png';
     } else {
       setTheme(_Theme.lightTheme);
       localStorage.setItem('theme', 'light');
+      icon.href = 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/DarkIcon.png';
     }
 
     setTimeout(function () {
       setShowLoader(false);
-    }, 8500);
+    }, 1);
   }, []);
 
   var onClickHome = function onClickHome() {
@@ -63164,7 +63167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35281" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46243" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
