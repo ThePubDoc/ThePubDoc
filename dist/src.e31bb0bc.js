@@ -63061,11 +63061,11 @@ var App = function App() {
   var changeTheme = function changeTheme() {
     if (Theme === _Theme.darkTheme) {
       setTheme(_Theme.lightTheme);
-      icon.href = './Assets/Favicon/DarkIcon.png';
+      icon.href = 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/DarkIcon.png';
       localStorage.setItem('theme', 'light');
     } else {
       setTheme(_Theme.darkTheme);
-      icon.href = './Assets/Favicon/LightIcon.png';
+      icon.href = 'https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/LightIcon.png';
       localStorage.setItem('theme', 'dark');
     }
   };
@@ -63073,16 +63073,13 @@ var App = function App() {
   (0, _react.useEffect)(function () {
     if (SavedTheme === null) {
       setTheme(_Theme.darkTheme);
-      icon.href = './Assets/Favicon/LightIcon.png';
       localStorage.setItem('theme', 'dark');
     } else if (SavedTheme === 'dark') {
       setTheme(_Theme.darkTheme);
-      icon.href = './Assets/Favicon/LightIcon.png';
       localStorage.setItem('theme', 'dark');
     } else {
       setTheme(_Theme.lightTheme);
       localStorage.setItem('theme', 'light');
-      icon.href = './Assets/Favicon/DarkIcon.png';
     }
 
     setTimeout(function () {

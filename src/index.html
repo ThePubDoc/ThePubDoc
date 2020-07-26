@@ -9,7 +9,7 @@
 			id="icon"
 			rel="icon"
 			type="image/png"
-			href="./Assets/Favicon/LightIcon.png"
+			href="https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Assets/Favicon/DarkIcon.png"
 		/>
 		<title>Aayush Agrawal</title>
 	</head>
@@ -18,15 +18,4 @@
 		<script src="./index.js"></script>
 		<!-- credits : Design Inspiration from Brittany Chiang v4 iteration. Github: https://github.com/bchiang7/v4 -->
 	</body>
-	<script>
-		const theme = localStorage.getItem('theme');
-		let icon = document.querySelector('[rel=icon]');
-		if (theme === 'light') {
-			icon.href = './Assets/Favicon/DarkIcon.png';
-			console.log('light change hua');
-		} else {
-			icon.href = './Assets/Favicon/LightIcon.png';
-			console.log('dark change hua');
-		}
-	</script>
 </html>
