@@ -38168,7 +38168,7 @@ var Education = function Education() {
     timeout: 1000,
     classNames: "appear"
   }, /*#__PURE__*/_react.default.createElement(_Education.StyledContainer, null, /*#__PURE__*/_react.default.createElement(_Education.StyledUniversity, null, /*#__PURE__*/_react.default.createElement(_Education.StyledLogo, {
-    src: "https://raw.githubusercontent.com/Varun-garg/GBU_Timetables/master/app/src/main/res/drawable-xhdpi/logo.png"
+    src: "https://raw.githubusercontent.com/thepubdoc/thepubdoc/master/src/Components/Education/Images/gbu.png"
   }), /*#__PURE__*/_react.default.createElement("h1", null, "Gautam Buddha University, Greater Noida, India"), /*#__PURE__*/_react.default.createElement("h3", null, "Intergrated B.Tech+M.Tech (CSE) - 2015-20")), /*#__PURE__*/_react.default.createElement(_Education.StyledDescription, null, "I have done my post graduation from Gautam Buddha University. I have completed my thesis under the mentorship of Dr. Pradeep Tomar. Topic of my thesis is \"AN EFFICIENT CRYPTOGRAPHY TECHNIQUE USING DIFFERENT BLOCK CIPHER MODES OF OPERATION TO SECURE IoT DATA\".")));
 };
 
@@ -63150,7 +63150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38757" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35387" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
