@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-import Light from '../Fonts/Rowdies-Light.ttf';
-import Bold from '../Fonts/Rowdies-Bold.ttf';
-import Regular from '../Fonts/Rowdies-Regular.ttf';
+import Light from '../Assets/Fonts/Rowdies-Light.ttf';
+import Bold from '../Assets/Fonts/Rowdies-Bold.ttf';
+import Regular from '../Assets/Fonts/Rowdies-Regular.ttf';
 
 const ResetStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,

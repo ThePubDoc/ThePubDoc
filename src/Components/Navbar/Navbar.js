@@ -8,7 +8,6 @@ import {
 	StyledSwitch,
 } from './Navbar.style';
 import { darkTheme } from '../../GlobalStyles/Theme';
-import Education from '../Education/Education';
 
 const Navbar = ({
 	change,

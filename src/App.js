@@ -30,12 +30,15 @@ const App = () => {
 
 	const SavedTheme = localStorage.getItem('theme');
 
+	let icon = document.getElementById('icon');
 	const changeTheme = () => {
 		if (Theme === darkTheme) {
 			setTheme(lightTheme);
+			icon.href = './Assets/Favicon/DarkIcon.png';
 			localStorage.setItem('theme', 'light');
 		} else {
 			setTheme(darkTheme);
+			icon.href = './Assets/Favicon/LightIcon.png';
 			localStorage.setItem('theme', 'dark');
 		}
 	};
@@ -43,13 +46,16 @@ const App = () => {
 	useEffect(() => {
 		if (SavedTheme === null) {
 			setTheme(darkTheme);
+			icon.href = './Assets/Favicon/LightIcon.png';
 			localStorage.setItem('theme', 'dark');
 		} else if (SavedTheme === 'dark') {
 			setTheme(darkTheme);
+			icon.href = './Assets/Favicon/LightIcon.png';
 			localStorage.setItem('theme', 'dark');
 		} else {
 			setTheme(lightTheme);
 			localStorage.setItem('theme', 'light');
+			icon.href = './Assets/Favicon/DarkIcon.png';
 		}
 		setTimeout(() => {
 			setShowLoader(false);
