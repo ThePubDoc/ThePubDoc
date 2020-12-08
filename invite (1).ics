@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20201208T113000Z
+DTEND:20201208T123000Z
+DTSTAMP:20201208T112203Z
+ORGANIZER;CN=swarnim.srivastava@sendinblue.com:mailto:swarnim.srivastava@se
+ ndinblue.com
+UID:7v390b1792b0cp2v4q77mh66vd@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=aayush.agrawal@sendinblue.com;X-NUM-GUESTS=0:mailto:aayush.agrawal@
+ sendinblue.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=swarnim.srivastava@sendinblue.com;X-NUM-GUESTS=0:mailto:swarnim.srivast
+ ava@sendinblue.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=swarnim.srivastava+2@sendinblue.com;X-NUM-GUESTS=0:mailto:swarnim.s
+ rivastava+2@sendinblue.com
+X-MICROSOFT-CDO-OWNERAPPTID:-2082355662
+CREATED:20201208T112159Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nPlease do not edit this section of the descriptio
+ n.\n\nThis event has a video call.\nJoin: https://meet.google.com/eog-vtqk-
+ sjp\n(US) +1 470-329-0311 PIN: 701933727#\nView more phone numbers: https:/
+ /tel.meet/eog-vtqk-sjp?pin=6121645771486&hs=7\n\nView your event at https:/
+ /calendar.google.com/calendar/event?action=VIEW&eid=N3YzOTBiMTc5MmIwY3AydjR
+ xNzdtaDY2dmQgYWF5dXNoLmFncmF3YWxAc2VuZGluYmx1ZS5jb20&tok=MzMjc3dhcm5pbS5zcm
+ l2YXN0YXZhQHNlbmRpbmJsdWUuY29tNzgxNmM2NmQ3MjU4YTZmZDczM2FiNDI3MDUzNjhkOWY4N
+ DUxNjdiMA&ctz=Asia%2FKolkata&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20201208T112200Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Test
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
