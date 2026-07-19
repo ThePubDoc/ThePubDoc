@@ -58,7 +58,7 @@ func main() {
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=go,kafka,redis,mongodb,postgres,grpc,kubernetes,docker,gcp,nodejs,typescript,git,linux,bash&perline=7" alt="tech stack"/>
+<img src="https://skillicons.dev/icons?i=go,kafka,redis,mongodb,postgres,kubernetes,docker,gcp,nodejs,typescript,git,linux,bash&perline=7" alt="tech stack"/>
 
 </div>
 
